@@ -1,0 +1,6 @@
+body{
+    background-color: lime;
+}
+div #map {
+    min-height: 360px;
+}
