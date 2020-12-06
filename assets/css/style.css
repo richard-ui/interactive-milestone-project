@@ -1,6 +1,88 @@
 body{
-    background-color: lime;
+    font-family: 'Epilogue', sans-serif;
 }
-div #map {
+
+.jumbotron{
+    background-color: #C0C0C0;
+}
+#map {
     min-height: 360px;
+
 }
+
+/*  --- Navigation --- */
+
+header{
+    margin: 0em;
+}
+.custom-toggler.navbar-toggler { 
+    border-color: lightgreen; 
+}
+
+/* Setting the stroke to green using rgb values (255, 255, 255) */
+
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        } 
+
+.navbar-brand{
+    color: #fff;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: #000;
+}
+.nav-link{
+    margin-left: 0.625em;
+    font-weight: 400;
+    font-size: 1.125em;
+}
+.navbar-text{
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #fff;
+}
+.nav-link span{
+   margin-left: 0.3125em;
+}
+
+.list-inline-item:not(:last-child){
+    margin:0;
+}
+ul li a{    
+    color: 	#fff;
+}
+
+
+/*  --- Footer --- */
+
+footer {
+    background-color: #4267b2;
+    color: #fafafa;
+    min-height: 7.5em;
+    margin: 0;
+    bottom: 0;
+}
+
+.cv-pdf i {
+     width: 2em;
+    height: 2em;
+    padding: 0.75em 0;
+    border-radius: 50%;
+    font-size: 1.125em;
+    line-height: 0.5em;
+    text-align: center;
+    color: #fafafa;
+    background: #4267b2;
+    
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+.inline-block{
+    display: inline-block;
+}
+
