@@ -1,3 +1,4 @@
+    
     function initMap(){
         var map = new google.maps.Map(document.getElementById("map"), { // center map
             zoom: 11,
@@ -62,15 +63,18 @@ function Choice(elem) {
 
    var box = document.getElementById("box");
    var restaurant = document.getElementById("restaurant");
-
+   
+   document.getElementById("booking-title").innerHTML = "";
 
    if (elem.id == "chief") {
 
-     document.getElementById("circle").style.display = "block"; 
+     document.getElementById("circle").style.display = "block";
+     document.getElementById("booking-title").innerHTML = "Big Chief";
 
    } else if (elem.id == "lesDeux") {
 
      box.style.backgroundColor = "red";
+     document.getElementById("booking-title").innerHTML = "Lex Deux";
 
    }else if (elem.id == "knight") {
 
