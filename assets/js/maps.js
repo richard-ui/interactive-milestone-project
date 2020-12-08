@@ -66,8 +66,7 @@ function Choice(elem) {
 
    if (elem.id == "chief") {
 
-     document.getElementById("divCheckbox").style.display = 'block';
-    // box.style.backgroundColor = "purple";
+     document.getElementById("circle").style.display = "block"; 
 
    } else if (elem.id == "lesDeux") {
 
@@ -79,4 +78,6 @@ function Choice(elem) {
 
    };
  };
+
+   
   
