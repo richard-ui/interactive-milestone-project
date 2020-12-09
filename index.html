@@ -72,44 +72,46 @@
                         <form>
                             <div class="form-group row">
                                 <label for="f-name" class="col-sm-2 col-form-label">First Name:</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-4">
                                 <i class="fa fa-user icon"></i> 
-                                <input type="text" class="form-control input-field" name="f-name" id="f-name" placeholder="enter your first name here..."
+                                <input type="text" class="form-control input-field" name="f-name" id="f-name" placeholder="first name..."
                                   required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="l-name" class="col-sm-2 col-form-label">Last Name:</label>
-                                <div class="col-sm-10">
-                                <i class="fa fa-envelope icon"></i> 
-                                <input type="text" class="form-control input-field" name="l-name" id="l-name" placeholder="enter your last name here..."
+                                <div class="col-sm-4">
+                                <i class="fa fa-user icon"></i> 
+                                <input type="text" class="form-control input-field" name="l-name" id="l-name" placeholder="last name..."
                                   required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
-                                <div class="col-sm-10">
-                                
-                                <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="enter your contact number here..."
+                                <div class="col-sm-4">
+                                <i class="fa fa-phone icon"></i>
+                                <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="contact number..."
                                   required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="email" class="col-sm-2 col-form-label">Email:</label>
-                                <div class="col-sm-10">
-                                <input type="email" name="email" id="email" class="form-control input-field" placeholder="enter your email here..."
+                                <div class="col-sm-4">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" name="email" id="email" class="form-control input-field" placeholder="email..."
                           required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="date" class="col-sm-2 col-form-label">Date:</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-4">
+                                <i class="fa fa-calendar icon"></i>
                                 <input type="date" class="form-control input-field" name="date" id="date" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="hour" class="col-sm-2 col-form-label">Hour:</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-4">
                                 <input type="time" class="form-control input-field" name="hour" id="hour"
                                  min="13:00" max="22:00" required/>
                                 <small>Open from 1pm to 10pm</small>
@@ -117,16 +119,21 @@
                             </div>
                             <div class="form-group row">
                                 <label for="guests" class="col-sm-2 col-form-label">Number of Guests:</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control input-field" name="guests" id="guests" placeholder="enter number of guests here..."
-                                  required/>                  
+                                <div class="col-sm-4">
+                                <i class="fa fa-users icon"></i>                 
+                                   <select id="guests" class="form-control input-field" name="guests" required>
+                                    <option value="One">1 Person</option>
+                                    <option value="Two">2 People</option>
+                                    <option value="Three">3 People</option>
+                                    <option value="Four">4 People</option>
+                                  </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="special" class="col-sm-3 col-form-label">Special Requirements?</label>
-                                <div class="col-sm-8">
+                                <label for="special" class="col-sm-2 col-form-label">Special Requirements?</label>
+                                <div class="col-sm-4">
                                     <textarea rows="4" name="special" id="special" class="form-control input-field"
-                                    placeholder="special requirements here..." required ></textarea>
+                                    placeholder="special requirements..." required ></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -140,8 +147,6 @@
           </div>
         </div>  
       </div>
-        
-        <div class="circle" id="circle" style="display:none;"></div>
         
 
        <!-- footer -->
