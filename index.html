@@ -62,49 +62,55 @@
           <div id="map"></div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div id="booking-form">
-              <div class="center-form">
+              <div class="center-form input-icons">
+              
                       <h3 class="text-uppercase text-center contact-text">Booking Form</h3>
+                       <label id="booking-title" class="col-sm-2">Booking title</label>
+
                         <form>
                             <div class="form-group row">
                                 <label for="f-name" class="col-sm-2 col-form-label">First Name:</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="f-name" id="f-name" placeholder="enter your first name here..."
+                                <i class="fa fa-user icon"></i> 
+                                <input type="text" class="form-control input-field" name="f-name" id="f-name" placeholder="enter your first name here..."
                                   required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="l-name" class="col-sm-2 col-form-label">Last Name:</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="l-name" id="l-name" placeholder="enter your last name here..."
+                                <i class="fa fa-envelope icon"></i> 
+                                <input type="text" class="form-control input-field" name="l-name" id="l-name" placeholder="enter your last name here..."
                                   required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="phone" id="phone" placeholder="enter your contact number here..."
+                                
+                                <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="enter your contact number here..."
                                   required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="email" class="col-sm-2 col-form-label">Email:</label>
                                 <div class="col-sm-10">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="enter your email here..."
+                                <input type="email" name="email" id="email" class="form-control input-field" placeholder="enter your email here..."
                           required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="date" class="col-sm-2 col-form-label">Date:</label>
                                 <div class="col-sm-10">
-                                <input type="date" class="form-control" name="date" id="date" required/>
+                                <input type="date" class="form-control input-field" name="date" id="date" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="hour" class="col-sm-2 col-form-label">Hour:</label>
                                 <div class="col-sm-10">
-                                <input type="time" class="form-control" name="hour" id="hour"
+                                <input type="time" class="form-control input-field" name="hour" id="hour"
                                  min="13:00" max="22:00" required/>
                                 <small>Open from 1pm to 10pm</small>
                                 </div>
@@ -112,17 +118,15 @@
                             <div class="form-group row">
                                 <label for="guests" class="col-sm-2 col-form-label">Number of Guests:</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="guests" id="guests" placeholder="enter number of guests here..."
-                                  required/>
-
-                                  
+                                <input type="text" class="form-control input-field" name="guests" id="guests" placeholder="enter number of guests here..."
+                                  required/>                  
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="special" class="col-sm-2 col-form-label">Any Special Requirements?:</label>
-                                <div class="col-sm-10">
-                                    <textarea rows="4" name="special" id="special" class="form-control"
-                                    placeholder="requirements here..." required ></textarea>
+                                <label for="special" class="col-sm-3 col-form-label">Special Requirements?</label>
+                                <div class="col-sm-8">
+                                    <textarea rows="4" name="special" id="special" class="form-control input-field"
+                                    placeholder="special requirements here..." required ></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
