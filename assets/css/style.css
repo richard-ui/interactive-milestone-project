@@ -2,14 +2,6 @@ body{
     font-family: 'Epilogue', sans-serif;
 }
 
-.jumbotron{
-    background-color: #C0C0C0;
-}
-#map {
-    min-height: 360px;
-
-}
-
 /*  --- Navigation --- */
 
 header{
@@ -52,16 +44,19 @@ header{
 ul li a{    
     color: 	#fff;
 }
-.circle { 
-    width: 130px; 
-    height: 130px; 
-    border-radius: 50%; 
-    float: left; 
-    margin-right: 50px; 
-} 
-#circle { 
-    background-color: red; 
+
+
+/*  --- Set Map --- */
+
+.jumbotron{
+    background-color: silver;
 }
+#map {
+    min-height: 360px;
+
+}
+
+ /* --- Booking Form --- */
 
 .input-icons i { 
   position: absolute; 
@@ -81,10 +76,24 @@ ul li a{
   width: 100%; 
   padding: 10px; 
   text-align: center; 
-} 
+}
 
+.center-form{
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: #4267b2;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    color: #fff;
+    padding: 2em;
+}
+select{
+    text-align-last:center;
+    padding-right: 29px;
+}
 
 /*  --- Footer --- */
+
 
 footer {
     background-color: #4267b2;
@@ -111,7 +120,48 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
+.cv-pdf i:hover {
+    background-color: #fff;
+    color: #4267b2; 
+}
 
+.social-links {
+    padding-bottom: 0.9375em;
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+.social-links li a i {
+    width: 2.1875em;
+    margin-right: 2.1875em;
+    height: 2.1875em;
+    padding: 0.75em 0;
+    border-radius: 50%;
+    font-size: 1.125em;
+    line-height: 0.625em;
+    text-align: center;
+    color: #fafafa;
+    background: #4267b2;
+    
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #fff;
+    color:#4267b2;
+}
+
+#footer-details {
+    padding: 1.875em;
+    margin-top: 3.5625em;
+}
+.general-sub{
+    font-family: "Epilogue", sans-serif;
+    color: #fff;
+}
 .inline-block{
     display: inline-block;
 }

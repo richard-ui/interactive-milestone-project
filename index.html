@@ -58,21 +58,22 @@
       <!-- map and form -->
     
       <div class="row">
-        <div class="col-md-6">
-          <div id="map"></div>
+        <div class="col-12">
+            <div id="map">
+            </div>
         </div>
-
-        <div class="col-md-12">
-          <div id="booking-form">
-              <div class="center-form input-icons">
-              
+      </div>
+       
+      <div class="row">
+        <div class="col">
+              <div class="center-form input-icons">          
                       <h3 class="text-uppercase text-center contact-text">Booking Form</h3>
                        <label id="booking-title" class="col-sm-2">Booking title</label>
 
                         <form>
                             <div class="form-group row">
                                 <label for="f-name" class="col-sm-2 col-form-label">First Name:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <i class="fa fa-user icon"></i> 
                                 <input type="text" class="form-control input-field" name="f-name" id="f-name" placeholder="first name..."
                                   required/>
@@ -80,7 +81,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="l-name" class="col-sm-2 col-form-label">Last Name:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <i class="fa fa-user icon"></i> 
                                 <input type="text" class="form-control input-field" name="l-name" id="l-name" placeholder="last name..."
                                   required/>
@@ -88,7 +89,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <i class="fa fa-phone icon"></i>
                                 <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="contact number..."
                                   required/>
@@ -96,7 +97,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="email" class="col-sm-2 col-form-label">Email:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <i class="fa fa-envelope icon"></i>
                                 <input type="email" name="email" id="email" class="form-control input-field" placeholder="email..."
                           required/>
@@ -104,14 +105,14 @@
                             </div>
                             <div class="form-group row">
                                 <label for="date" class="col-sm-2 col-form-label">Date:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <i class="fa fa-calendar icon"></i>
                                 <input type="date" class="form-control input-field" name="date" id="date" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="hour" class="col-sm-2 col-form-label">Hour:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <input type="time" class="form-control input-field" name="hour" id="hour"
                                  min="13:00" max="22:00" required/>
                                 <small>Open from 1pm to 10pm</small>
@@ -119,7 +120,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="guests" class="col-sm-2 col-form-label">Number of Guests:</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                 <i class="fa fa-users icon"></i>                 
                                    <select id="guests" class="form-control input-field" name="guests" required>
                                     <option value="One">1 Person</option>
@@ -131,7 +132,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="special" class="col-sm-2 col-form-label">Special Requirements?</label>
-                                <div class="col-sm-4">
+                                <div class="col-9">
                                     <textarea rows="4" name="special" id="special" class="form-control input-field"
                                     placeholder="special requirements..." required ></textarea>
                                 </div>
@@ -142,11 +143,11 @@
                                 <button type="reset" class="btn btn-danger">Clear</button>
                                 </div>
                             </div>                       
-                            </form>
-                    </div>             
-          </div>
+                            </form>           
+              </div>
         </div>  
       </div>
+      
         
 
        <!-- footer -->
@@ -155,9 +156,9 @@
             <div class="row">
                     <!-- social links -->
                     
-                    <div class="col-12 col-sm-7">
-                    <h5 class="uppercase general-sub">Social</h5>
+                    <div class="col-12">
                         <ul class="list-inline social-links">
+                         <h5 class="uppercase general-sub">Social</h5>
                             <li class="list-inline-item">
                                 <a target="_blank" href="https://www.facebook.com/">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
