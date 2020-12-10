@@ -6,7 +6,7 @@
             zoom: 11,
             center: {
                lat: 53.465590,
-              lng: -2.348213
+               lng: -2.348213
                }
     });
          
@@ -22,16 +22,31 @@
         '<img width="130" height="100" align="left" src="assets/images/big_chief.jpg" alt="big chief" style="margin-right: 10px;"><b>Contact: </b>07543 326141' +
         '<div><button type="button" id="chief" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.465590, -2.348213, 1, "Big Chief"],
 
+        ['<h1 class="info_Heading">Lex Deux</h1>' +
+        '<div id="bodyContent">' +
+        '<img width="130" height="100" align="left" src="assets/images/les_deux.jpg" alt="lex deux" style="margin-right: 10px;"><b>Contact: </b>07265 241386' +
+        '<div><button type="button" id="lexDeux" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.446622, -2.308713, 2, "Lex Deux"],
+
 
         ['<h1 class="info_Heading">Knights Town</h1>' +
             '<div id="bodyContent">' +
-            '<img width="130"  height="100" align="left" src="assets/images/knights_town.jpg" alt="Knights Town" style="margin-right: 10px;"><b>Contact: </b>07465 342181' +
-            '<div><button type="button" id="knight" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.477314, -2.254962, 2, "Knights Town"],
+            '<img width="130"  height="100" align="left" src="assets/images/knights_town.jpg" alt="knights town" style="margin-right: 10px;"><b>Contact: </b>07465 342181' +
+            '<div><button type="button" id="knight" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.477314, -2.254962, 3, "Knights Town"],
 
-       ['<h1 class="info_Heading">Lex Deux</h1>' +
-        '<div id="bodyContent">' +
-        '<img width="130" height="100" align="left" src="assets/images/les_deux.jpg" alt="Lex Deux" style="margin-right: 10px;"><b>Contact: </b>07265 241386' +
-        '<div><button type="button" id="lexDeux" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.446622, -2.308713, 3, "Lex Deux"]
+        ['<h1 class="info_Heading">Black Star</h1>' +
+            '<div id="bodyContent">' +
+            '<img width="130"  height="100" align="left" src="assets/images/black_star.jpg" alt="black star" style="margin-right: 10px;"><b>Contact: </b>07465 322141' +
+            '<div><button type="button" id="bk-star" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.451003, -2.203978, 4, "Black Star"],
+
+        ['<h1 class="info_Heading">El Porto</h1>' +
+            '<div id="bodyContent">' +
+            '<img width="130"  height="100" align="left" src="assets/images/el_Porto.jpg" alt="el_porto" style="margin-right: 10px;"><b>Contact: </b>07465 782141' +
+            '<div><button type="button" id="el-porto" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.490885, -2.180429, 5, "El Porto"],
+
+        ['<h1 class="info_Heading">Little Italy</h1>' +
+            '<div id="bodyContent">' +
+            '<img width="130"  height="100" align="left" src="assets/images/little_italy.jpg" alt="little italy" style="margin-right: 10px;"><b>Contact: </b>07966 785141' +
+            '<div><button type="button" id="lil-italy" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.429871, -2.223866, 6, "Little Italy"]
 
     ];
 
@@ -73,8 +88,19 @@ function Choice(elem) {
 
      document.getElementById("booking-title").textContent = restName[0] + locations[2][4];
 
+   }else if (elem.id == "bk-star") {
+
+     document.getElementById("booking-title").textContent = restName[0] + locations[3][4];
+
+   }else if (elem.id == "el-porto") {
+
+     document.getElementById("booking-title").textContent = restName[0] + locations[4][4];
+
+   }else if (elem.id == "lil-italy") {
+
+     document.getElementById("booking-title").textContent = restName[0] + locations[5][4];
+
    };
  };
 
-   
   
