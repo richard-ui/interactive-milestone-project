@@ -18,7 +18,11 @@ As a First time user I want to be able to navigate the site in an easy and effic
 
 As a First time user I want to be able to read information in a clear and concise way, with appropriate font and paragraphs formatted in a consistent way on the page.
 
-As a First Time user I want to be...
+As a First time user, I want to be able to see a Map that is scaled nicely on the page.
+
+As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+  
+As a First time user, I want to be able to use the contact form, to book a reservation for the currently selected Restaurant.
 
 Design
 
@@ -87,6 +91,13 @@ Testing User Stories from User Experience (UX) Section
 
   
   iii. As a First time user I want to be able to read information in a clear and concise way, with appropriate font and paragraphs formatted in a consistent way on the page.
+
+
+  iv. As a First time user, I want to be able to see a Map that is scaled nicely on the page.
+
+  v. As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+  
+  vi. As a First time user, I want to be able to use the contact form, to book a reservation for the currently selected Restaurant.
 
 
 Further Testing

@@ -45,12 +45,17 @@ ul li a{
     color: 	#fff;
 }
 
+/* --- Jumbotron --- */
+
+.jumbotron{
+    background-image: url("/assets/images/bg-restaurant.jpg");
+    background-size: cover;
+    height: 370px;
+}
+
 
 /*  --- Set Map --- */
 
-.jumbotron{
-    background-color: silver;
-}
 #map {
     min-height: 360px;
 
@@ -70,6 +75,7 @@ ul li a{
 .icon { 
   padding: 10px; 
   min-width: 40px; 
+  color: #000;
 } 
           
 .input-field { 
@@ -80,16 +86,25 @@ ul li a{
 
 .center-form{
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 50%;  
     background-color: #4267b2;
     border-radius: 25px;
     border: 2px solid #73AD21;
     color: #fff;
     padding: 2em;
 }
+#booking-title{
+  background-color: #fff;
+  color: #000;
+  border-style: outset;
+  padding: 0.3em;
+}
 select{
     text-align-last:center;
     padding-right: 29px;
+}
+.info-btn{
+    margin-top: 1em;
 }
 
 /*  --- Footer --- */
