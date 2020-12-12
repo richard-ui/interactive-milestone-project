@@ -1,9 +1,14 @@
 
 function sendMail(contactForm) {
     emailjs.send("service_csslju6", "Rick", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
+        "first_name": contactForm.f_name.value,
+        "last_name": contactForm.l_name.value,
+        "phone": contactForm.phone.value,
+        "email": contactForm.email.value,
+        "date": contactForm.date.value,
+        "hour": contactForm.hour.value,
+        "guests": contactForm.guests.value,
+        "specialrequests": contactForm.special.value
     })
     .then(
         function(response) {
