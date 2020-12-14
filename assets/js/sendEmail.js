@@ -1,6 +1,7 @@
 
 function sendMail(contactForm) {
     emailjs.send("service_csslju6", "Rick", {
+        "reserve_name": contactForm.reserve_name.value,
         "first_name": contactForm.f_name.value,
         "last_name": contactForm.l_name.value,
         "phone": contactForm.phone.value,
@@ -17,6 +18,7 @@ function sendMail(contactForm) {
         },
         function(error) {
             console.log("FAILED", error);
+            $("#success-form").html("E-mail Error!");
         }
     );
     return false;  // To block from loading a new page
