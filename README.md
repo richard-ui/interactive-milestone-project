@@ -25,6 +25,8 @@ These markers are interactive and allow customers to view, click and book a rese
 
 - As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
 
+- As a Customer, i want to be able to use the form as  way of communication to book a reservation slot for a particular Restaurant.
+
 ## Design
 
 1. Colour Scheme
@@ -85,27 +87,51 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 - These were used to prevent mistakes and would run snytax errors if there was something wrong.
 
 ## Testing User Stories from User Experience (UX) Section
+
 - First Time Visitor Goals
 
   i. As a First Time Visitor, I want to easily understand main concept of the site and learn the intention of its relevance.
      
-     - Upon entering the site, users are automatically greeted with a clean and easily readable bootstrap navigation bar to go to the page of their choice. Underneath there is a an Image of the developers face with Text "About Me".
-    
-     - The main points are made immediately with the image and the 'About me' header which is nicely centered and bold. The user now knows the site is about the developer, and gets a nice warm feeling like there smiling back at them to encourage them to read more information on the page.
-
+     - Upon entering the site, users are automatically greeted with a jumbotron which was a flexible component that showcased what the site was about, containing a bold title. 
 
   ii. As a First time user I want to be able to navigate the site in an easy and efficient way without any complex design.
 
+     - The overall site has been made with a fluid design, with a navigation bar that clearly defines links to each page.
+     
+     - On the Map Page when the reservation form has been submitted the page will refresh and take the user back to the top of the page.
   
   iii. As a First time user I want to be able to read information in a clear and concise way, with appropriate font and paragraphs formatted in a consistent way on the page.
-
+     
+     - example text
 
   iv. As a First time user, I want to be able to see a Map that is scaled nicely on the page.
 
-  v. As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
-  
-  vi. As a First time user, I want to be able to use the contact form, to book a reservation for the currently selected Restaurant.
+     - Underneath the Jumbotron is a GoogleMap takes up the width of the screen and is made clear for the viewer to see the markers.
 
+  v. As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+     
+     - On page load, the map automatically will display markers. The user is given a choice of which Red marker they want to select.
+
+     - The user can hover over a marker which a white box, named an 'infoWindow' will pop up over the marker.
+
+     - This displays information such as an Name, Description, Image and a Button Representing a certain location.
+
+
+  vi. As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
+
+    - A dropdown list is clearly visible and  displayed above the the map.
+
+    - The list is an interactive box that contains a list of Cities, which allows them to select only one option.
+
+    -  Once selected, Red Markers will then display within that given area on the Google Map.
+
+  vii. As a Customer, i want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
+
+     - The form has input fields that contain labels to identity what they mean aswell as icons to emphasise there relevance even more, so the user understands what to enter into the text box.
+     
+     - Once the submit button is clicked it, all fields will be validated and if only if successful a message saying 'Message Sent' will appear on the page.
+     
+     - Once validated, an email will be sent to the developers email account to make them aware of the reservation.
 
 ## Further Testing
 
@@ -114,7 +140,7 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 - The website was viewed on iPhone SE, Android and laptop. There was also use of the developer tools as a faster way to look at the site becoming responsive such as using the example devices in the tools area. Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 - The website was tested on multiple browsers such as Microsoft Edge, Opera and FireFox, but the main one that was used was Chrome. This was because I was using the chrome extension at the time for gitpod
-and I felt chrome was fast and reliable.
+  and I felt chrome was fast and reliable.
 
 - ### Chrome
  
@@ -183,22 +209,24 @@ Forking the repsoitory means we are making a copy of the original version  to ed
 - All content was written by the developer.
 
 ## Code
-- Code to help design Reservation Form. This was took from w3schools.
+- Code to help design Reservation Form input fields was took from w3schools [youtube.com](https://www.youtube.com/watch?v=Bs2jdg0oRLM)
 
-- Code to design button shadow was taken from w3schools.
+- Code to implement sticky footer in media queries, using 'bottom: 0' and 'position: fixed'  [w3schools.com](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
 
-- Code to implement sticky footer was taken from
+- Code for styling Form icons within input Fields was taken from [geeksforgeeks.org](https://www.geeksforgeeks.org/css-to-put-icon-inside-an-input-element-in-a-form/)
 
-- Code to colour toggler lines was taken from [geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/)
+- Code to colour Navbar toggler lines was taken from [geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/)
 
 ## Media
 - The image on the homepage was owned by the developer
-- The images on the skills page were taken from the internet, simply used by verifying there 'free of use' from 'googles advanced search tool'
+- The images that were used for the Restaurants were taken from the internet, simply used by verifying there 'free of use' from 'googles advanced search tool'
 - Source used for Youtube video - 
 Traversy Media
  (2019, September 09). The Benefits Of Becoming a Web Developer YouTube. Retrieved from 'https://www.youtube.com/embed/JguKLogoGMk'
 
 ## Acknowledgements
 - My Mentor for continuous helpful feedback.
+
+- Slack was a very helpful useful source to gain information.
 
 - Tutor support at Code Institute for their support.
