@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- English language -->
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- uses viewport to be responisve on mobile -->
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interactive Project</title>
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+
+	    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Use email js key to connect  to emailing -->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_57t1ug1vZiBD8ezXEWhqF");
+            })();
+        </script>
+
+</head>
+
+<body onload="bodyOnLoad()">
+<div class="container-fluid">
+ <header>
+
+     <!-- navigation-->
+     
+    <nav class="navbar navbar-expand-lg" style="background-color: #4267b2;">
+
+        <a class="navbar-brand" href="index.html">Rick's Website</a>
+        
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link hvr-underline-from-center" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hvr-underline-from-center" href="map.html"><i class="fa fa-map-marker"></i><span>Map</span></a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+     </header>
+
+   <!-- jumbotron-->
+
+        <article id="home-page">
+            <section class="jumbotron">
+                <h1>Interactive Maps Project</h1>
+                <p>View the map and take a look at our great Restaurant destinations!</p>
+            </section>
+        </article>	
+
+      <!-- map and Dropdown List -->
+
+      <div class="row">
+         <div class="col">
+             <label for="mySelect" class="col-2">Please Select By City:</label>
+            <select id="mySelect" onchange="dropdownfunction()">
+                <option value="--">--</option>
+                <option value="man">MANCHESTER</option>
+                <option value="liv">LIVERPOOL</option>
+                <option value="bra">BRADFORD</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <div id="map">
+            </div>
+        </div>
+      </div>
+
+      <!-- Reservation Form -->
+
+      <div class="row">
+        <div class="col-12 col-sm-8">
+              <div class="contact-form center-form input-icons">          
+                      <h3 class="text-uppercase text-center contact-text">Reservation Form</h3>
+                       <label id="booking-title" class="text-center">Restaurant Name: Big Chief</label>
+
+                        <form onsubmit="return sendMail(this);" method="POST">
+                            <div class="form-group row">
+                                <label for="f_name" class="col-sm-3 col-form-label">First Name:</label>
+                                <div class="col-12">
+                                <i class="fa fa-user icon"></i>
+                                <input type="hidden" class="form-control input-field" id="reserve_name" name="reserve_name"
+                                   required/>    
+                                <input type="text" class="form-control input-field" name="f_name" id="f_name" placeholder="first name..."/>
+                                <div class="col-12">
+                                  <label id="f_name_label" class="col-12 col-form-label"></label>
+                                </div>    
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="l_name" class="col-sm-3 col-form-label">Last Name:</label>
+                                <div class="col-12">
+                                <i class="fa fa-user icon"></i> 
+                                <input type="text" class="form-control input-field" name="l_name" id="l_name" placeholder="last name..."/>
+                                <div class="col-12">
+                                  <label id="l_name_label" class="col-12 col-form-label"></label>
+                                </div>     
+                            </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone" class="col-sm-3 col-form-label">Phone:</label>
+                                <div class="col-12">
+                                <i class="fa fa-phone icon"></i>
+                                <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="contact number..."/>
+                                <small>Telephone must be a valid US number (11 digits)</small>
+                                </div>
+                                <div class="col-12">
+                                  <label id="phone_label" class="col-12 col-form-label"></label>
+                                </div> 
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-3 col-form-label">Email:</label>
+                                <div class="col-12">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" name="email" id="email" class="form-control input-field" placeholder="email..."/>
+                                </div>
+                                <div class="col-12">
+                                  <label id="email_label" class="col-12 col-form-label"></label>
+                                </div> 
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-3 col-form-label">Date:</label>
+                                <div class="col-12">
+                                <i class="fa fa-calendar icon"></i>
+                                <input type="date" class="form-control input-field" name="date" id="date"/>
+                                </div>
+                                <div class="col-12">
+                                  <label id="date_label" class="col-12 col-form-label"></label>
+                                </div> 
+                            </div>
+                            <div class="form-group row">
+                                <label for="hour" class="col-sm-3 col-form-label">Hour:</label>
+                                <div class="col-12">
+                                <input type="time" class="form-control input-field" name="hour" id="hour" min="13:00" max="22:00" step="3600"/>
+                                <small id="times">Open from 1pm to 10pm</small>
+                                </div>
+                                <div class="col-12">
+                                  <label id="hour_label" class="col-12 col-form-label"></label>
+                                </div> 
+                            </div>
+                            <div class="form-group row">
+                                <label for="guests" class="col-sm-3 col-form-label">Number of Guests:</label>
+                                <div class="col-12">
+                                <i class="fa fa-users icon"></i>                 
+                                   <select id="guests" class="form-control input-field" name="guests">
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="special" class="col-sm-3 col-form-label">Special Requirements?</label>
+                                <div class="col-12">
+                                    <textarea rows="4" name="special" id="special" class="form-control input-field"
+                                    placeholder="special requirements..."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-danger">Clear</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                                <div class="col-12">
+                                <strong><label id="success-form"></label></strong>
+                                </div>
+                            </div>
+
+                            </form>           
+              </div>
+        </div>  
+      </div>
+       
+        
+
+       <!-- footer -->
+            
+    <footer id="footer-details" class="container-fluid">
+            <div class="row">
+                    <!-- social links -->
+                    
+                     <div class="col-12 col-sm-12 offset-sm-2 col-md-12 offset-md-0">
+                   
+                        <ul class="list-inline social-links">
+                            <h5 class="uppercase general-sub">Social</h5>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.twitter.com/">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <span class="sr-only">LinkedIn</span>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            </footer>
+    
+     </div>
+
+     <!-- for clustering markers together -->
+   
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        
+        <!-- Script tags to retrive googlemaps api -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgxyEm5dI5lYx7I-hEqHDU2OVlA8U0IMQ&callback=initMap"></script>
+       
+       <!-- Connect to our maps js file -->
+     <script src="assets/js/maps.js"></script>
+
+    <!-- Connect to our send email js file -->
+
+    <script src="assets/js/sendEmail.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>
