@@ -50,7 +50,7 @@
                 <a class="nav-link hvr-underline-from-center" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="contact.html"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
+                <a class="nav-link hvr-underline-from-center" href="map.html"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Map</span></a>
             </li>
             </ul>
         </div>
@@ -66,131 +66,13 @@
             </section>
         </article>	
 
-      <!-- map and form -->
-    
-      <div class="row">
-        <div class="col-12">
-            <div id="map">
-            </div>
-        </div>
-      </div>
-       
-      <div class="row">
-        <div class="col-12 col-sm-8">
-              <div class="contact-form center-form input-icons">          
-                      <h3 class="text-uppercase text-center contact-text">Reservation Form</h3>
-                       <label id="booking-title" class="text-center">Restaurant Name: Big Chief</label>
-
-                        <form onsubmit="return sendMail(this);" method="POST">
-                            <div class="form-group row">
-                                <label for="f_name" class="col-sm-3 col-form-label">First Name:</label>
-                                <div class="col-12">
-                                <i class="fa fa-user icon"></i>
-                                <input type="hidden" class="form-control input-field" id="reserve_name" name="reserve_name"
-                                   required/>    
-                                <input type="text" class="form-control input-field" name="f_name" id="f_name" placeholder="first name..."/>
-                                <div class="col-12">
-                                  <label id="f_name_label" class="col-sm-3 col-form-label"></label>
-                                </div>    
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="l_name" class="col-sm-3 col-form-label">Last Name:</label>
-                                <div class="col-12">
-                                <i class="fa fa-user icon"></i> 
-                                <input type="text" class="form-control input-field" name="l_name" id="l_name" placeholder="last name..."/>
-                                <div class="col-12">
-                                  <label id="l_name_label" class="col-sm-3 col-form-label"></label>
-                                </div>     
-                            </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="phone" class="col-sm-3 col-form-label">Phone:</label>
-                                <div class="col-12">
-                                <i class="fa fa-phone icon"></i>
-                                <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="contact number..."/>
-                                <small>Telephone must be a valid US number (11 digits)</small>
-                                </div>
-                                <div class="col-12">
-                                  <label id="phone_label" class="col-sm-3 col-form-label"></label>
-                                </div> 
-                            </div>
-                            <div class="form-group row">
-                                <label for="email" class="col-sm-3 col-form-label">Email:</label>
-                                <div class="col-12">
-                                <i class="fa fa-envelope icon"></i>
-                                <input type="email" name="email" id="email" class="form-control input-field" placeholder="email..."/>
-                                </div>
-                                <div class="col-12">
-                                  <label id="email_label" class="col-sm-3 col-form-label"></label>
-                                </div> 
-                            </div>
-                            <div class="form-group row">
-                                <label for="date" class="col-sm-3 col-form-label">Date:</label>
-                                <div class="col-12">
-                                <i class="fa fa-calendar icon"></i>
-                                <input type="date" class="form-control input-field" name="date" id="date"/>
-                                </div>
-                                <div class="col-12">
-                                  <label id="date_label" class="col-sm-3 col-form-label"></label>
-                                </div> 
-                            </div>
-                            <div class="form-group row">
-                                <label for="hour" class="col-sm-3 col-form-label">Hour:</label>
-                                <div class="col-12">
-                                <input type="time" class="form-control input-field" name="hour" id="hour" min="13:00" max="22:00" step="3600"/>
-                                <small id="times">Open from 1pm to 10pm</small>
-                                </div>
-                                <div class="col-12">
-                                  <label id="hour_label" class="col-sm-3 col-form-label"></label>
-                                </div> 
-                            </div>
-                            <div class="form-group row">
-                                <label for="guests" class="col-sm-3 col-form-label">Number of Guests:</label>
-                                <div class="col-12">
-                                <i class="fa fa-users icon"></i>                 
-                                   <select id="guests" class="form-control input-field" name="guests">
-                                    <option value="1">1 Person</option>
-                                    <option value="2">2 People</option>
-                                    <option value="3">3 People</option>
-                                    <option value="4">4 People</option>
-                                  </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="special" class="col-sm-3 col-form-label">Special Requirements?</label>
-                                <div class="col-12">
-                                    <textarea rows="4" name="special" id="special" class="form-control input-field"
-                                    placeholder="special requirements..."></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                                <button type="reset" class="btn btn-danger">Clear</button>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <div class="col-12">
-                                <strong><label id="success-form"></label></strong>
-                                </div>
-                            </div>
-
-                            </form>           
-              </div>
-        </div>  
-      </div>
-      
-        
-
        <!-- footer -->
             
     <footer id="footer-details" class="container-fluid">
             <div class="row">
                     <!-- social links -->
                     
-                     <div class="col-12 col-sm-12 offset-sm-2 col-md-12 offset-md-0">
+                     <div class="col-12 col-sm-12 offset-sm-0 col-md-12 offset-md-0">
                    
                         <ul class="list-inline social-links">
                             <h5 class="uppercase general-sub">Social</h5>
@@ -240,6 +122,7 @@
        
        <!-- Connect to our maps js file -->
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/buttons.js"></script>
 
     <!-- Connect to our send email js file -->
 

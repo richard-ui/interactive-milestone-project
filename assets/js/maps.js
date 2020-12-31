@@ -5,9 +5,14 @@ var map;
 var markers = []; // array with pushed markers inside
 
 var marker, i;
+ var lat1;
+ var lng2;
 
-var lat1 = 53.417375;
-var lng2 = -2.924687;
+function bodyOnLoad(){
+    lat1 = 53.465590;
+    lng2 = -2.348213;
+    initMap(lat1, lng2);
+}
 
 function initMap(lat1, lng2) {
   map = new google.maps.Map(document.getElementById("map"), {   // center map
@@ -87,7 +92,7 @@ function initMap(lat1, lng2) {
     for (i = 0; i < locations.length; i++) {
 
        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]), // lat / long
             map: map,
             label: labels[i % labels.length] // implement labels on markers
         });
@@ -100,7 +105,7 @@ function initMap(lat1, lng2) {
         })(marker, i));
 
         markers.push(marker); // push current marker into array
-        setMapOnAll(map);
+        setMapOnAll(map);     // set markers on map
 
     }
 
@@ -141,7 +146,7 @@ function dropdownfunction(){
  }
 
 function setMapOnAll(map) {                     // Sets all markers in the array to the Map.
-  for (let i = 0; i < markers.length; i++) {
+  for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(map);
   }
 }
@@ -151,67 +156,4 @@ function deleteMarkers() {      // Deletes all markers in the array by removing 
   markers = [];
 }
 
-function bodyOnLoad(){
-    lat1 = 53.465590;
-    lng2 = -2.348213;
-    initMap(lat1, lng2);
-}
 
-// function for info window buttons
-
-function Choice(elem) {
-  
-    var restName = ["Restaurant Name: "];
-    var open_Times = ["Open from ", "pm to ", "pm"];
-    var hour = document.getElementById("hour");
-
-   if (elem.id == "chief") {
-    
-    hour.min = "13:00";   // min and max opening times set for each button click
-    hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[0][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[0][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[0][3] + open_Times[1] + locations[0][5] + open_Times[2];
-
-   } else if (elem.id == "lexDeux") {
-
-    hour.min = "14:00";
-    hour.max = "20:00";
-    document.getElementById("reserve_name").value = restName[0] + locations[1][4];
-    document.getElementById("booking-title").textContent = restName[0] + locations[1][4];
-    document.getElementById("times").textContent = open_Times[0] + locations[1][3] + open_Times[1] + locations[1][5] + open_Times[2];
-
-   }else if (elem.id == "knight") {
-     
-    hour.min = "13:00";
-    hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[2][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[2][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[2][3] + open_Times[1] + locations[2][5] + open_Times[2];
-
-   }else if (elem.id == "bk-star") {
-
-    hour.min = "12:00";
-    hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[3][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[3][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[3][3] + open_Times[1] + locations[3][5] + open_Times[2];
-
-   }else if (elem.id == "el-porto") {
-
-    hour.min = "12:00";
-    hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[4][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[4][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[4][3] + open_Times[1] + locations[4][5] + open_Times[2];
-
-   }else if (elem.id == "lil-italy") {
-
-    hour.min = "14:00";
-    hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[5][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[5][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[5][3] + open_Times[1] + locations[5][5] + open_Times[2];
-
-   }
- }

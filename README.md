@@ -58,7 +58,7 @@ These markers are interactive and allow customers to view, click and book a rese
 - Bootstrap is a CSS framework and used throughly throughout the website. The main target of using BootStrap within my site was to make it easier
 making the site responsive on mobile devices.
 2. Hover.css:
-- Hover.css was used added in the head tag. This was for implementing cool looking hover effects when hovering over links.
+- Hover.css was used added in the head tag. This was used for implementing a cool looking hover effect when hovering over navbar links.
 3. Google Fonts:
 - Google fonts were used to import the 'Epilogue' font into the style.css file which is used on all pages throughout the project.
 4. Font Awesome:
@@ -99,16 +99,12 @@ The Technologies that were used were new and updated versions of HTML and CSS.
      - The overall site has been made with a fluid design, with a navigation bar that clearly defines links to each page.
      
      - On the Map Page when the reservation form has been submitted the page will refresh and take the user back to the top of the page.
-  
-  iii. As a First time user I want to be able to read information in a clear and concise way, with appropriate font and paragraphs formatted in a consistent way on the page.
-     
-     - example text
 
-  iv. As a First time user, I want to be able to see a Map that is scaled nicely on the page.
+  iii. As a First time user, I want to be able to see a Map that is scaled nicely on the page.
 
      - Underneath the Jumbotron is a GoogleMap takes up the width of the screen and is made clear for the viewer to see the markers.
 
-  v. As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+  iv. As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
      
      - On page load, the map automatically will display markers. The user is given a choice of which Red marker they want to select.
 
@@ -117,7 +113,7 @@ The Technologies that were used were new and updated versions of HTML and CSS.
      - This displays information such as an Name, Description, Image and a Button Representing a certain location.
 
 
-  vi. As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
+  v. As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
 
     - A dropdown list is clearly visible and  displayed above the the map.
 
@@ -125,7 +121,7 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 
     -  Once selected, Red Markers will then display within that given area on the Google Map.
 
-  vii. As a Customer, i want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
+  vi. As a Customer, i want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
 
      - The form has input fields that contain labels to identity what they mean aswell as icons to emphasise there relevance even more, so the user understands what to enter into the text box.
      
@@ -216,6 +212,8 @@ Forking the repsoitory means we are making a copy of the original version  to ed
 - Code for styling Form icons within input Fields was taken from [geeksforgeeks.org](https://www.geeksforgeeks.org/css-to-put-icon-inside-an-input-element-in-a-form/)
 
 - Code to colour Navbar toggler lines was taken from [geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/)
+
+- Code to check whether an input is empty [techiedelight.com](https://www.techiedelight.com/check-input-text-box-empty-javascript/#:~:text=To%20check%20if%20input%20text,undefined%20on%20an%20empty%20collection.)
 
 ## Media
 - The image on the homepage was owned by the developer

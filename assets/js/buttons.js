@@ -40,21 +40,54 @@ function Choice(elem) {
      document.getElementById("booking-title").textContent = restName[0] + locations[3][4];
      document.getElementById("times").textContent = open_Times[0] + locations[3][3] + open_Times[1] + locations[3][5] + open_Times[2];
 
+   }else if (elem.id == "benson") {
+
+    hour.min = "13:00";
+    hour.max = "22:00";
+     document.getElementById("reserve_name").value = restName[0] + locations2[0][4];
+     document.getElementById("booking-title").textContent = restName[0] + locations2[0][4];
+     document.getElementById("times").textContent = open_Times[0] + locations2[0][3] + open_Times[1] + locations[0][5] + open_Times[2];
+
    }else if (elem.id == "el-porto") {
 
     hour.min = "12:00";
     hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[4][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[4][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[4][3] + open_Times[1] + locations[4][5] + open_Times[2];
+     document.getElementById("reserve_name").value = restName[0] + locations2[1][4];
+     document.getElementById("booking-title").textContent = restName[0] + locations2[1][4];
+     document.getElementById("times").textContent = open_Times[0] + locations2[1][3] + open_Times[1] + locations[1][5] + open_Times[2];
 
    }else if (elem.id == "lil-italy") {
 
     hour.min = "14:00";
     hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[5][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[5][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[5][3] + open_Times[1] + locations[5][5] + open_Times[2];
+     document.getElementById("reserve_name").value = restName[0] + locations2[2][4];
+     document.getElementById("booking-title").textContent = restName[0] + locations2[2][4];
+     document.getElementById("times").textContent = open_Times[0] + locations2[2][3] + open_Times[1] + locations[2][5] + open_Times[2];
 
    }
+   else if (elem.id == "cafeChoc") {
+
+    hour.min = "13:00";
+    hour.max = "22:00";
+     document.getElementById("reserve_name").value = restName[0] + locations3[0][4];
+     document.getElementById("booking-title").textContent = restName[0] + locations3[0][4];
+     document.getElementById("times").textContent = open_Times[0] + locations3[0][3] + open_Times[1] + locations3[0][5] + open_Times[2];
+
+   }else if (elem.id == "dirtybones") {
+    
+    hour.min = "13:00";
+    hour.max = "22:00";
+     document.getElementById("reserve_name").value = restName[0] + locations3[1][4];
+     document.getElementById("booking-title").textContent = restName[0] + locations3[1][4];
+     document.getElementById("times").textContent = open_Times[0] + locations3[1][3] + open_Times[1] + locations3[1][5] + open_Times[2];
+   
+    }else if (elem.id == "forman") {
+
+    hour.min = "13:00";
+    hour.max = "22:00";
+     document.getElementById("reserve_name").value = restName[0] + locations3[2][4];
+     document.getElementById("booking-title").textContent = restName[0] + locations3[2][4];
+     document.getElementById("times").textContent = open_Times[0] + locations3[2][3] + open_Times[1] + locations3[2][5] + open_Times[2];
+
+    }
  }
