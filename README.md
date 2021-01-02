@@ -2,13 +2,13 @@
 
 ## Rick's Restaurant's
 
-- Link to Project - [View](https://richard-ui.github.io/interactive-milestone-project)
+- Link to Project - [View](https://richard-ui.github.io/interactive-milestone-project/)
 
-![All_Devices](/assets/images/el_Porto.jpg)
+![All_Devices](/assets/images/responsive_image.png)
 
 ## Brief Introduction to the Project
 
-The purpose of this website is to load a map using the RESTFUL architechure which implements the Googlemaps api functionality that shows a number of Restaurant markers on the map.
+The purpose of this website is to load a map which implements the Googlemaps api functionality that shows a number of Restaurant markers on the map.
 These markers are interactive and allow customers to view, click and book a reservation table using a contact form.
 
 ## UX User Stories
@@ -21,7 +21,7 @@ These markers are interactive and allow customers to view, click and book a rese
 
 - As a First time user, I want to be able to see a Map that is scaled nicely on the page.
 
-- As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+- As a Customer, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
 
 - As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
 
@@ -102,9 +102,9 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 
   iii. As a First time user, I want to be able to see a Map that is scaled nicely on the page.
 
-     - Underneath the Jumbotron is a GoogleMap takes up the width of the screen and is made clear for the viewer to see the markers.
+     - Underneath the Jumbotron on the Map page is a GoogleMap that takes up the width of the screen and is made clear for the viewer to see the markers.
 
-  iv. As a First time user, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+  iv. As a Customer, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
      
      - On page load, the map automatically will display markers. The user is given a choice of which Red marker they want to select.
 
@@ -121,11 +121,11 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 
     -  Once selected, Red Markers will then display within that given area on the Google Map.
 
-  vi. As a Customer, i want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
+  vi. As a Customer, I want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
 
      - The form has input fields that contain labels to identity what they mean aswell as icons to emphasise there relevance even more, so the user understands what to enter into the text box.
      
-     - Once the submit button is clicked it, all fields will be validated and if only if successful a message saying 'Message Sent' will appear on the page.
+     - Once the submit button is clicked it, all fields will be validated and if successful a message saying 'E-mail Message Sent' will appear on the Form.
      
      - Once validated, an email will be sent to the developers email account to make them aware of the reservation.
 
@@ -133,10 +133,8 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 
 - The website was tested on multiple browsers such as Microsoft Edge, Opera and FireFox, but the main one that was used was Chrome. This was because I was using the chrome extension at the time for gitpod and I felt chrome was fast and reliable.
 
-- The website was viewed on iPhone SE, Android and laptop. There was also use of the developer tools as a faster way to look at the site becoming responsive such as using the example devices in the tools area. Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
-
-- The website was tested on multiple browsers such as Microsoft Edge, Opera and FireFox, but the main one that was used was Chrome. This was because I was using the chrome extension at the time for gitpod
-  and I felt chrome was fast and reliable.
+- The website was viewed on iPhone, Android, Laptop and Desktop Devices. There was also use of the developer tools as a faster way to look at the site becoming responsive such as using the example devices in the tools area. Friends and family members were asked
+  to review the site and documentation to point out any bugs and/or user experience issues.
 
 - ### Chrome
  
@@ -150,18 +148,12 @@ The Technologies that were used were new and updated versions of HTML and CSS.
  
    ![FireFox](/assets/images/big_chief.jpg)
 
-- The website was viewed on iPhone SE, Android and laptop. There was also use of the developer tools as a faster way to look at the site becoming responsive such as using the example devices in the tools area.
-Friends and Family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 - ### Responsiveness
  
    ![Responsinator](/assets/cross-browser/responsinator.png)
 - The Responsinator tool was a feature used to view the deployed site and look to see how each device would display it. Device screens such as Android, iPhone and iPads were used to view on. In doing so
 they were viewed in a landscape and portrait perspective.
-
-### Bugs
-- There was an issue with the footer element in all browsers. The footer would not stick to the bottom of the screen and therefore leave white space between itself and the bottom of the screen. To fix this problem the footer
-was fixed to the bottom using bootstrap tools and css styling.
 
 ## Deployment
 
@@ -201,7 +193,7 @@ Forking the repsoitory means we are making a copy of the original version  to ed
     `$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
 ## Content
-- All content was written by the developer.
+- The Images of Restaurants that were displayed in the infoWindows were taken from Google Images using Googles advanced search tool to verify there free of use availability.
 
 ## Code
 - Code to help design Reservation Form input fields was took from w3schools [youtube.com](https://www.youtube.com/watch?v=Bs2jdg0oRLM)
@@ -214,13 +206,9 @@ Forking the repsoitory means we are making a copy of the original version  to ed
 
 - Code to check whether an input is empty [techiedelight.com](https://www.techiedelight.com/check-input-text-box-empty-javascript/#:~:text=To%20check%20if%20input%20text,undefined%20on%20an%20empty%20collection.)
 
-## Media
-- The image on the homepage was owned by the developer
-- The images that were used for the Restaurants were taken from the internet, simply used by verifying there 'free of use' from 'googles advanced search tool'
-
 ## Acknowledgements
 - My Mentor for continuous helpful feedback.
 
-- Slack was a very helpful useful source to gain information.
+- Slack was a very helpful useful source to gain information about ceratin JavaScript functionality.
 
 - Tutor support at Code Institute for their support.
