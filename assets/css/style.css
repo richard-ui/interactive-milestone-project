@@ -185,6 +185,12 @@ footer {
        margin: 0 auto;
        max-width: 70%;
     }
+    #footer-details {
+        position: fixed; 
+        bottom: 0;
+        padding: 1.875em;
+        margin-top: 3.125em;
+   }
 }
 
  /* # Laptops and Desktops */
