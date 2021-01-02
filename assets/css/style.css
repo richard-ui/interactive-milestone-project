@@ -52,7 +52,7 @@ ul li a{
 
 .jumbotron{
     background-image: linear-gradient(to right, rgba(255,0,0,0), #4267b2);
-    height: 370px;
+    height: 23em;
 }
 
 
@@ -65,7 +65,7 @@ ul li a{
 
  /* --- Booking Form --- */
 
- /* --- Credits: code for styling input fields that place icons inside --- */
+ /* --- Credits: code for styling input fields that place font awesome icons inside --- */
 
 .input-icons i { 
   position: absolute; 
@@ -73,7 +73,7 @@ ul li a{
           
 .input-icons { 
   width: 100%; 
-  margin-bottom: 10px; 
+  margin-bottom: 0.625em; 
 } 
           
 .icon { 
@@ -92,7 +92,7 @@ ul li a{
     margin: 0 auto;
     max-width: 50%;  
     background-color: #4267b2;
-    border-radius: 25px;
+    border-radius: 1.5em;
     border: 2px solid #73AD21;
     color: #fff;
     padding: 2em;
@@ -121,7 +121,7 @@ footer {
     bottom: 0;
 }
 
-#footer-details {
+#footer-details, #footermap {
     padding: 1.875em;
     margin-top: 3.5625em;
 }
@@ -155,7 +155,6 @@ footer {
     color:#4267b2;
 }
 .general-sub{
-    font-family: "Epilogue", sans-serif;
     color: #fff;
 }
 .inline-block{
@@ -186,16 +185,6 @@ footer {
        margin: 0 auto;
        max-width: 70%;
     }
-
-     footer {
-        position: fixed; 
-        bottom: 0;
-        margin-top: 0.3125em;
-    }
-    #footer-details {
-        padding: 1.875em;
-        margin-top: 3.125em;
-   }
 }
 
  /* # Laptops and Desktops */
@@ -203,13 +192,10 @@ footer {
 @media (min-width: 1025px) and (max-width: 1280px){
 
      /* -- Credits: Here is the code used for generating a sticky footer -- */
-
-    footer {
+     
+    #footer-details {
         position: fixed; 
         bottom: 0;
-        margin-top: 0.3125em;
-    }
-    #footer-details {
         padding: 1.875em;
         margin-top: 3.125em;
    }
@@ -228,14 +214,12 @@ footer {
         margin: 0 auto;
         max-width: 50%;
     }
-    
-    footer {
+
+    #footer-details {
         position: fixed; 
         bottom: 0;
-        margin-top: 0.3125em;
-    }
-    #footer-details {
         padding: 1.875em;
         margin-top: 3.125em;
    }
+
  } 
