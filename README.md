@@ -168,7 +168,6 @@ was fixed to the bottom using bootstrap tools and css styling.
 - Step-by-step guide
 
 1. Log in to GitHub
-
 2. Locate the repositories and chose one that you want to Deploy
 3. Press the "Settings"
 4. Scroll down to the GitHub pages section
@@ -218,9 +217,6 @@ Forking the repsoitory means we are making a copy of the original version  to ed
 ## Media
 - The image on the homepage was owned by the developer
 - The images that were used for the Restaurants were taken from the internet, simply used by verifying there 'free of use' from 'googles advanced search tool'
-- Source used for Youtube video - 
-Traversy Media
- (2019, September 09). The Benefits Of Becoming a Web Developer YouTube. Retrieved from 'https://www.youtube.com/embed/JguKLogoGMk'
 
 ## Acknowledgements
 - My Mentor for continuous helpful feedback.

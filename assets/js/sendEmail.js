@@ -4,7 +4,7 @@ function sendMail(contactForm) {
     $("#f_name_label").html(""), $("#l_name_label").html(""), $("#phone_label").html(""),
     $("#email_label").html(""), $("#date_label").html(""), $("#hour_label").html("");
 
-    /* Credits: Here is code to check whether input fields are empty */
+    /* Credits: Here is code to check whether input fields are empty from techiedelight.com */
 
     if (!$('#f_name').val()) {
       $("#f_name_label").html("Please Enter your First Name!");  
