@@ -5,19 +5,17 @@ var map;
 var markers = []; // array with pushed markers inside
 
 var marker, i;
- var lat1;
- var lng2;
+var lat1;
+var lng2;
 
-function bodyOnLoad(){
-    lat1 = 53.465590;
-    lng2 = -2.348213;
-    initMap(lat1, lng2);
-}
+function initMap(lat1 = 53.465590, lng2 = -2.348213) {
 
-function initMap(lat1, lng2) {
   map = new google.maps.Map(document.getElementById("map"), {   // center map
             zoom: 11,
-            center: { lat: lat1, lng: lng2 }
+            center: {
+            lat: lat1,      // latitude and longitude parameters from initMap()
+            lng: lng2
+        }
     });
          
     var labels =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ";   // array of labels for markers
