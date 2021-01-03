@@ -90,7 +90,7 @@ ul li a{
 
 .center-form{
     margin: 0 auto;
-    max-width: 30%;  
+    max-width: 50%;  
     background-color: #4267b2;
     border-radius: 1.5em;
     border: 2px solid #73AD21;
@@ -207,7 +207,7 @@ footer {
         padding-top: 1.875em;
         min-height: 15em;
         margin: 0 auto;
-        max-width: 50%;
+        max-width: 80%;
     }
 
     #footer-details {
