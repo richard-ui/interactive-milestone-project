@@ -77,8 +77,8 @@ ul li a{
 } 
           
 .icon { 
-  padding: 10px; 
-  min-width: 40px; 
+  padding: 0.625em; 
+  min-width: 2.5em; 
   color: #000;
 } 
           
@@ -90,7 +90,7 @@ ul li a{
 
 .center-form{
     margin: 0 auto;
-    max-width: 50%;  
+    max-width: 30%;  
     background-color: #4267b2;
     border-radius: 1.5em;
     border: 2px solid #73AD21;
@@ -118,7 +118,6 @@ footer {
     color: #fafafa;
     min-height: 7.5em;
     margin: 0;
-    bottom: 0;
 }
 
 #footer-details, #footermap {
@@ -128,8 +127,6 @@ footer {
 
 .social-links {
     padding-bottom: 0.9375em;
-    margin: 0 auto;
-    max-width: 40%;
 }
 
 .social-links li a i {
@@ -157,9 +154,6 @@ footer {
 .general-sub{
     color: #fff;
 }
-.inline-block{
-    display: inline-block;
-}
 
 
 /* Media Queries */
@@ -181,10 +175,9 @@ footer {
   /* # Tablets/Ipads portrait mode */
 
 @media (min-width: 768px) and (max-width: 1024px){ 
-    .center-form{
-       margin: 0 auto;
-       max-width: 70%;
-    }
+    
+    /* -- Credits: Here is the code used for generating a sticky footer on iPads. Also used for on media queries for laptops/desktops and larger screen sizes  -- */
+    
     #footer-details {
         position: fixed; 
         bottom: 0;
@@ -196,17 +189,13 @@ footer {
  /* # Laptops and Desktops */
 
 @media (min-width: 1025px) and (max-width: 1280px){
-
-     /* -- Credits: Here is the code used for generating a sticky footer -- */
-     
+   
     #footer-details {
         position: fixed; 
         bottom: 0;
         padding: 1.875em;
         margin-top: 3.125em;
    }
-
-
      
 } 
           

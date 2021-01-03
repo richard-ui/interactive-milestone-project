@@ -36,9 +36,9 @@ These markers are interactive and allow customers to view, click and book a rese
 
 ## Wireframes
 
-- Home Page Wireframe - [View](https://github.com/richard-ui/project/blob/master/assets/wireframes/HomePage.pdf)
+- Home Page Wireframe - [View](https://github.com/richard-ui/interactive-milestone-project/tree/master/assets/wireframes/MapPage.pdf)
 
-- Mobile Wireframe - [View](https://github.com/richard-ui/project/blob/master/assets/wireframes/Mobile.pdf)
+- Mobile Wireframe - [View](https://github.com/richard-ui/interactive-milestone-project/tree/master/assets/wireframes/Mobile.pdf)
 
 ## Languages Used
 
