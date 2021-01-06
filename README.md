@@ -21,11 +21,11 @@ These markers are interactive and allow customers to view, click and book a rese
 
 - As a First time user, I want to be able to see a Map that is scaled nicely on the page.
 
+- As a Customer, I'd like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
+
 - As a Customer, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
 
-- As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
-
-- As a Customer, i want to be able to use the form as  way of communication to book a reservation slot for a particular Restaurant.
+- As a Customer, I want to be able to use the form as way of communication to book a slot for a particular Restaurant.
 
 ## Design
 
@@ -96,38 +96,47 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 
   ii. As a First time user I want to be able to navigate the site in an easy and efficient way without any complex design.
 
-     - The overall site has been made with a fluid design, with a navigation bar that clearly defines links to each page.
+    - The overall site has been made with a fluid design, with a navigation bar that clearly defines links to each page.
      
-     - On the Map Page when the reservation form has been submitted the page will refresh and take the user back to the top of the page.
+    - On the Map Page when the reservation form has been submitted the page will refresh and take the user back to the top of the page.
 
   iii. As a First time user, I want to be able to see a Map that is scaled nicely on the page.
 
-     - Underneath the Jumbotron on the Map page is a GoogleMap that takes up the width of the screen and is made clear for the viewer to see the markers.
+    - Underneath the Jumbotron on the Map page is a GoogleMap that takes up the width of the screen and is made clear for the viewer to see the markers.
+    
+    ![map](/assets/images/map_load.png)
 
-  iv. As a Customer, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
-     
-     - On page load, the map automatically will display markers. The user is given a choice of which Red marker they want to select.
+- Customer Goals
 
-     - The user can hover over a marker which a white box, named an 'infoWindow' will pop up over the marker.
+   i. As a Customer, I'd like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
 
-     - This displays information such as an Name, Description, Image and a Button Representing a certain location.
+    - A dropdown list is clearly visible and displayed above the the map.
 
-
-  v. As a Frequent Visitor, id like to have an option that allows me to search restaurants from a particular region/city that will display location markers within a specific area on the map.
-
-    - A dropdown list is clearly visible and  displayed above the the map.
-
-    - The list is an interactive box that contains a list of Cities, which allows them to select only one option.
+    - The list is an interactive box that contains a list of Cities from the NorthWest, which allows them to select only one option.
 
     -  Once selected, Red Markers will then display within that given area on the Google Map.
 
-  vi. As a Customer, I want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
+     ![searchCity](/assets/images/searchcity.png)
+   
+   ii. As a Customer, I want to be able to interact with the Markers on the GoogleMap, allowing them to show relevant information in an infoWindow.
+     
+     - When the Red Markers appear on the map, The user is given a choice of which Red marker they want to select.
+
+     - The user can hover over a marker which a white box, named an 'infoWindow' will pop up over the marker.
+
+     - This displays information such as a Name, Description, Image and a Button Representing a certain location.
+
+     ![markerinfo](/assets/images/markers.png)
+
+  ii. As a Customer, I want to be able to use the form as way of communication to book a reservation slot for a particular Restaurant.
 
      - The form has input fields that contain labels to identity what they mean aswell as icons to emphasise there relevance even more, so the user understands what to enter into the text box.
      
-     - Once the submit button is clicked it, all fields will be validated and if successful a message saying 'E-mail Message Sent' will appear on the Form.
+     - Once the submit button is clicked it, all fields will be validated with errors next to fields that are empty. If successful a message saying 'E-mail Message Sent' will appear on the Form.
      
      - Once validated, an email will be sent to the developers email account to make them aware of the reservation.
+
+     ![form](/assets/images/form.png)
 
 ## Further Testing
 
@@ -152,6 +161,7 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 - ### Responsiveness
  
    ![Responsinator](/assets/cross-browser/responsinator.png)
+
 - The Responsinator tool was a feature used to view the deployed site and look to see how each device would display it. Device screens such as Android, iPhone and iPads were used to view on. In doing so
 they were viewed in a landscape and portrait perspective.
 
