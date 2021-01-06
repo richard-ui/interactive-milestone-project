@@ -8,7 +8,7 @@ var marker, i;
 var lat1;
 var lng2;
 
-function initMap(lat1 = 53.465590, lng2 = -2.348213) {
+function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for centering map
 
   map = new google.maps.Map(document.getElementById("map"), {   // center map
             zoom: 11,
@@ -33,7 +33,6 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) {
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/les_deux.jpg" alt="lex deux" style="margin-right: 10px;"><b>Contact: </b>07265 241386' +
         '<div><button type="button" id="lexDeux" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.446622, -2.308713, 2, "Lex Deux", 8],
-
 
         ['<h1 class="info_Heading">Knights Town</h1>' +
             '<div id="bodyContent">' +
@@ -103,7 +102,7 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) {
         })(marker, i));
 
         markers.push(marker); // push current marker into array
-        setMapOnAll(map);     // set markers on map
+        setMapOnAll(map);     // use function to set markers on map
 
     }
 

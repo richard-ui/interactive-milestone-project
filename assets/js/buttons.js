@@ -4,17 +4,17 @@
 
 function Choice(elem) {
   
-    var restName = ["Restaurant Name: "];
-    var open_Times = ["Open from ", "pm to ", "pm"];
+    var restName = ["Restaurant Name: "]; // basic array with 1 string
+    var open_Times = ["Open from ", "pm to ", "pm"]; // array with 3 strings
     var hour = document.getElementById("hour");
 
    if (elem.id == "chief") {
     
     hour.min = "13:00";   // min and max opening times set for each button click
-    hour.max = "22:00";
-     document.getElementById("reserve_name").value = restName[0] + locations[0][4];
-     document.getElementById("booking-title").textContent = restName[0] + locations[0][4];
-     document.getElementById("times").textContent = open_Times[0] + locations[0][3] + open_Times[1] + locations[0][5] + open_Times[2];
+    hour.max = "22:00";                                                               // place name of restaurant clicked into 'hidden' element. This is hidden because we only use it to pass
+     document.getElementById("reserve_name").value = restName[0] + locations[0][4];   // it through the contact form and not display its value on the page
+     document.getElementById("booking-title").textContent = restName[0] + locations[0][4]; // 
+     document.getElementById("times").textContent = open_Times[0] + locations[0][3] + open_Times[1] + locations[0][5] + open_Times[2]; // use of locations array for specific opening times 
 
    } else if (elem.id == "lexDeux") {
 
