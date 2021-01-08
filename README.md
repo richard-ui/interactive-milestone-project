@@ -147,20 +147,22 @@ The Technologies that were used were new and updated versions of HTML and CSS.
 
 - ### Chrome
  
-   ![Chrome](/assets/cross-browser/chrome.png)
+   ![Chrome](/assets/images/chrome.png)
 
 - ### Microsoft Edge
  
-   ![Edge](/assets/cross-browser/edge.png)
+   ![Edge](/assets/images/edge.png)
 
 - ### FireFox
  
-   ![FireFox](/assets/images/big_chief.jpg)
+   ![FireFox](/assets/images/firefox.png)
 
 
 - ### Responsiveness
  
-   ![Responsinator](/assets/cross-browser/responsinator.png)
+   ![Mobile](/assets/images/responsinator.png)
+
+   ![iPad](/assets/images/responsinator2.png)
 
 - The Responsinator tool was a feature used to view the deployed site and look to see how each device would display it. Device screens such as Android, iPhone and iPads were used to view on. In doing so
 they were viewed in a landscape and portrait perspective.
