@@ -184,6 +184,10 @@ footer {
         padding: 1.875em;
         margin-top: 3.125em;
    }
+
+   .social-links {
+       margin: 0 auto;
+   }
 }
 
  /* # Laptops and Desktops */
