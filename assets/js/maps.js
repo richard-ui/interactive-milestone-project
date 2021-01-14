@@ -27,22 +27,22 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
         ['<h1 class="info_Heading">Big Chief</h1>' +
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/big_chief.jpg" alt="big chief" style="margin-right: 10px;"><b>Contact: </b>07543 326141' +
-        '<div><button type="button" id="chief" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.465590, -2.348213, 1, "Big Chief", 10],
+        '<div><button type="button" id="chief" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.465590, -2.348213, 1, "Big Chief", 10],
 
         ['<h1 class="info_Heading">Lex Deux</h1>' +
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/les_deux.jpg" alt="lex deux" style="margin-right: 10px;"><b>Contact: </b>07265 241386' +
-        '<div><button type="button" id="lexDeux" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.446622, -2.308713, 2, "Lex Deux", 8],
+        '<div><button type="button" id="lexDeux" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.446622, -2.308713, 2, "Lex Deux", 8],
 
         ['<h1 class="info_Heading">Knights Town</h1>' +
             '<div id="bodyContent">' +
             '<img width="130"  height="100" align="left" src="assets/images/knights_town.jpg" alt="knights town" style="margin-right: 10px;"><b>Contact: </b>07465 342181' +
-            '<div><button type="button" id="knight" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.477314, -2.254962, 1, "Knights Town", 10],
+            '<div><button type="button" id="knight" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.477314, -2.254962, 1, "Knights Town", 10],
 
         ['<h1 class="info_Heading">Black Star</h1>' +
             '<div id="bodyContent">' +
             '<img width="130"  height="100" align="left" src="assets/images/black_star.jpg" alt="black star" style="margin-right: 10px;"><b>Contact: </b>07465 322141' +
-            '<div><button type="button" id="bk-star" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.451003, -2.203978, 12, "Black Star", 10]
+            '<div><button type="button" id="bk-star" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.451003, -2.203978, 12, "Black Star", 10]
 
     ];
 
@@ -51,17 +51,17 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
         ['<h1 class="info_Heading">Benson Lodge</h1>' +
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/Benson_Lodge.jpg" alt="benson"" style="margin-right: 10px;"><b>Contact: </b>07533 326141' +
-        '<div><button type="button" id="benson" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.417375, -2.924687, 1, "Benson Lodge", 10],
+        '<div><button type="button" id="benson" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.417375, -2.924687, 1, "Benson Lodge", 10],
 
          ['<h1 class="info_Heading">El Porto</h1>' +
             '<div id="bodyContent">' +
             '<img width="130"  height="100" align="left" src="assets/images/el_Porto.jpg" alt="el_porto" style="margin-right: 10px;"><b>Contact: </b>07465 782141' +
-            '<div><button type="button" id="el-porto" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.392814, -2.935674, 12, "El Porto", 10],
+            '<div><button type="button" id="el-porto" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.392814, -2.935674, 12, "El Porto", 10],
 
         ['<h1 class="info_Heading">Little Italy</h1>' +
             '<div id="bodyContent">' +
             '<img width="130"  height="100" align="left" src="assets/images/little_italy.jpg" alt="little italy" style="margin-right: 10px;"><b>Contact: </b>07966 785141' +
-            '<div><button type="button" id="lil-italy" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.423512, -2.918507, 2, "Little Italy", 10]
+            '<div><button type="button" id="lil-italy" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.423512, -2.918507, 2, "Little Italy", 10]
    
     ];
 
@@ -70,17 +70,17 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
         ['<h1 class="info_Heading">Cafe Chocolat</h1>' +
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/cafechocolat.jpg" alt="cafe-chocolat" style="margin-right: 10px;"><b>Contact: </b>07543 333141' +
-        '<div><button type="button" id="cafeChoc" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.820898, -1.743720, 1, "cafe chocolat", 10],
+        '<div><button type="button" id="cafeChoc" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.820898, -1.743720, 1, "cafe chocolat", 10],
         
          ['<h1 class="info_Heading">Dirty Bones</h1>' +
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/DirtyBones.jpg" alt="dirtyBones" style="margin-right: 10px;"><b>Contact: </b>07543 326241' +
-        '<div><button type="button" id="dirtybones" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.791704, -1.734107, 1, "Dirty Bones", 10],
+        '<div><button type="button" id="dirtybones" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></button></div>', 53.791704, -1.734107, 1, "Dirty Bones", 10],
 
         ['<h1 class="info_Heading">Fish Forman</h1>' +
         '<div id="bodyContent">' +
         '<img width="130" height="100" align="left" src="assets/images/FishForman.jpg" alt="fishforman" style="margin-right: 10px;"><b>Contact: </b>07343 322141' +
-        '<div><button type="button" id="forman" onclick="Choice(this);" class="btn btn-primary info-btn">Contact</button></div>', 53.801640, -1.796248, 1, "Fish Forman", 10]
+        '<div><button type="button" id="forman" onclick="Choice(this);" class="btn btn-primary info-btn">Reservation</button></div>', 53.801640, -1.796248, 1, "Fish Forman", 10]
 
     ];
 

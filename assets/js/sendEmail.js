@@ -8,21 +8,27 @@ function sendMail(contactForm) {
     /* Credits: Here is code to check whether input fields are empty from techiedelight.com */
    
     if (!$('#f_name').val()) {    // use of jQuery for validation
+        document.getElementById('f_name').classList.add("red");
       $("#f_name_label").html("Please Enter your First Name!");  // output
     }
     else if (!$('#l_name').val()) {
+        document.getElementById('l_name').classList.add("red");
       $("#l_name_label").html("Please Enter your Last Name!");
     }
     else if (!$('#phone').val()) {
+        document.getElementById('phone').classList.add("red");
       $("#phone_label").html("Please Enter your Phone Number!");
     }
     else if (!$('#email').val()) {
+        document.getElementById('email').classList.add("red");
       $("#email_label").html("Please Enter your E-mail!");
     }
     else if (!$('#date').val()) {
+        document.getElementById('date').classList.add("red");
       $("#date_label").html("Please Enter a Date!");
     }
     else if (!$('#hour').val()) {
+        document.getElementById('hour').classList.add("red");
       $("#hour_label").html("Please Enter a Time!");
     }
     else{

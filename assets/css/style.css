@@ -88,6 +88,14 @@ ul li a{
   text-align: center; 
 }
 
+.red {
+    outline: 2px solid red;
+}
+
+.green {
+    outline: 2px solid green;
+}
+
 .center-form{
     margin: 0 auto;
     max-width: 50%;  
