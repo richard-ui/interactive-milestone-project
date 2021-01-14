@@ -2,8 +2,13 @@
 function sendMail(contactForm) {
 
     // empty all form input fields to ""
+
     $("#f_name_label").html(""), $("#l_name_label").html(""), $("#phone_label").html(""),
     $("#email_label").html(""), $("#date_label").html(""), $("#hour_label").html("");
+
+    document.getElementById('f_name').classList.remove("red"), document.getElementById('l_name').classList.remove("red"),
+    document.getElementById('phone').classList.remove("red"), document.getElementById('email').classList.remove("red"),
+    document.getElementById('date').classList.remove("red"), document.getElementById('hour').classList.remove("red");
 
     /* Credits: Here is code to check whether input fields are empty from techiedelight.com */
    
