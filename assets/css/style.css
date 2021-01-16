@@ -91,10 +91,12 @@ ul li a{
 .red {
     outline: 3px solid red;
 }
+small{
+    margin-left: 6em;
+}
 
 .center-form{
-    margin: 0 auto;
-    max-width: 50%;  
+    /*max-width: 50%; */ 
     background-color: #4267b2;
     border-radius: 1.5em;
     border: 2px solid #73AD21;
@@ -176,14 +178,13 @@ footer {
   body {
     font-size: 1.125em;
   }
-  .center-form{
-    margin: 0;
-    max-width: 100%;  
-   }
    .infoContent{
     float: left;
     clear: both;
    }
+   small{
+    margin-left: 2em;
+}
 }
 
   /* # Tablets/Ipads portrait mode */
@@ -224,7 +225,6 @@ footer {
     .center-form{
         padding-top: 1.875em;
         min-height: 15em;
-        margin: 0 auto;
     }
 
     #footer-details {

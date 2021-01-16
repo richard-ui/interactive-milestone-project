@@ -51,11 +51,11 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            $("#success-form").html("E-mail has been sent!");    // message will output on the page if successful
+            $("#success-form").html("E-mail has been sent to the Developer!");    // message will output on the page if successful
         },
         function(error) {
             console.log("FAILED", error);
-            $("#success-form").html("E-mail Error!");  // error message will appear in label if there are any errors submitting form
+            $("#success-form").html("Something went wrong... E-mail Error!");  // error message will appear in label if there are any errors submitting form
         }
     );
     }
