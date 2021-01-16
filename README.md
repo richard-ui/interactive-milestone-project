@@ -4,7 +4,7 @@
 
 - Link to Project - [View](https://richard-ui.github.io/interactive-milestone-project/)
 
-![All_Devices](/assets/images/responsive_image.png)
+![All_Devices](/assets/images/amiresponsive.png)
 
 ## Brief Introduction to the Project
 
