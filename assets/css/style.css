@@ -117,6 +117,10 @@ select{
 .info-btn{
     margin-top: 1em;
 }
+.infoContent{
+    margin-top: 10px;
+    font-weight: 200;
+}
 
 /*  --- Footer --- */
 
@@ -176,7 +180,10 @@ footer {
     margin: 0;
     max-width: 100%;  
    }
-
+   .infoContent{
+    float: left;
+    clear: both;
+   }
 }
 
   /* # Tablets/Ipads portrait mode */
