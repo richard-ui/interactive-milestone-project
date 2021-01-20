@@ -119,9 +119,9 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
 }
 
 function dropdownfunction(){
-     x = document.getElementById("mySelect");
+     mySelect = document.getElementById("mySelect");
 
-     item1 = x.options[x.selectedIndex].value; // get selected value from dropdown box
+     item1 = mySelect.options[mySelect.selectedIndex].value; // get selected value from dropdown box
 
      deleteMarkers();   // run function to delete markers from map
      locations = [];
