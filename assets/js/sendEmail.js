@@ -35,17 +35,13 @@ function sendMail(contactForm) {
     
    // validate function used in if statements, retrieving 2 parameters, input 'id' and display an error message in label
 
-     if (validateInput('f_name', "Please Enter your First Name")){
+       if (validateInput('f_name', "Please Enter your First Name")){
         if (validateInput('l_name', "Please Enter your Last Name")){
             if (validateInput('phone', "Please Enter your Phone Number!")){
 			    if (validateInput('email', "Please Enter your Email!")){
 			        if (validateInput('date', "Please Enter a Date!")){
 			            if (validateInput('hour', "Please Enter a Time!")){
-			             
-                        }
-						
-                        else{
-						    emailjs.send("service_csslju6", "Rick", {          // grab values of contact form input fields and send to 'Ricks' Email
+			              emailjs.send("service_csslju6", "Rick", {          // grab values of contact form input fields and send to 'Ricks' Email
 								"reserve_name": contactForm.reserve_name.value, 
 								"first_name": contactForm.f_name.value,
 								"last_name": contactForm.l_name.value,
@@ -55,11 +51,12 @@ function sendMail(contactForm) {
 								"hour": contactForm.hour.value,
 								"guests": contactForm.guests.value,
 								"specialrequests": contactForm.special.value
+                            })
+                             emailjs.send("service_csslju6", "SendToUser", {          // grab values of contact form input fields and send to 'Ricks' Email
+								"first_name": contactForm.f_name.value, 
+								"email": contactForm.email.value
 							})
-							emailjs.send("service_csslju6", "SendToUser", {          // grab values of contact form input fields and send to 'Ricks' Email
-								"email": contactForm.email.value,
-								"first_name": contactForm.f_name.value
-							})
+							
 							.then(
 								function(response) {
 									console.log("SUCCESS", response);
@@ -70,8 +67,7 @@ function sendMail(contactForm) {
 									$("#success-form").html("Something went wrong... E-mail Error!");  // error message will appear in label if there are any errors submitting form
 								}
 							);
-						}
-
+                        }	
 			
                     }
 			
@@ -80,9 +76,9 @@ function sendMail(contactForm) {
             }
         }
 
-
     }
 
     return false;  // To block from loading a new page
+
     
 }

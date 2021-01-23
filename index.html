@@ -131,8 +131,8 @@
                                 <label for="phone" class="col-sm-3 col-form-label">Phone:</label>
                                 <div class="col-12 col-md-8">
                                     <i class="fa fa-phone icon"></i>
-                                    <input type="text" class="form-control input-field" name="phone" id="phone" placeholder="contact number..."/>
-                                    <small>Telephone must be a valid US number (11 digits)</small>
+                                    <input type="tel" class="form-control input-field" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="contact number..."/>
+                                    <small>Format: 123-4523-6783</small>
                                     <div class="col-12">
                                     <label id="phone_label" class="col-12 col-form-label"></label>
                                     </div>
