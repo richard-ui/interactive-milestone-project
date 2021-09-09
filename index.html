@@ -39,7 +39,7 @@
      
     <nav class="navbar navbar-expand-lg" style="background-color: #DD7230">
 
-        <a class="navbar-brand" href="index.html">Rick's Website</a>
+        <a class="navbar-brand" href="index.html">Rick's Restaurant's</a>
         
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,12 +75,12 @@
 
       <div class="row">
          <div class="col">
-              <label for="mySelect">Please Select By City:</label>      
+              <label for="mySelect">Please Select City:</label>      
             <select id="mySelect" onchange="dropdownfunction()">
                 <option value="--">--</option>
-                <option value="man">MANCHESTER</option>
-                <option value="liv">LIVERPOOL</option>
-                <option value="bra">BRADFORD</option>
+                <option value="man">Manchester</option>
+                <option value="liv">Liverpool</option>
+                <option value="bra">Bradford</option>
             </select>
         </div>
       </div>
@@ -91,11 +91,6 @@
             </div>
         </div>
       </div>
-
-    
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalForm">
-        Launch demo modal
-      </button> -->
       
 
         <!-- Modal HTML Markup -->
@@ -113,10 +108,11 @@
                     <form onsubmit="return sendMail(this);" method="POST">
                         <div class="form-group row">
                             <label for="f_name" class="col-sm-3 col-form-label">First Name:</label>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 input-icons">
                                 <i class="fa fa-user icon"></i>
                                 <input type="hidden" class="form-control input-field" id="reserve_name" name="reserve_name"/>    
                                 <input type="text" class="form-control input-field" name="f_name" id="f_name" placeholder="first name..."/>
+                                
                                 <div class="col-12">
                                 <label id="f_name_label" class="col-12 col-form-label"></label>
                                 </div>    
@@ -124,7 +120,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="l_name" class="col-sm-3 col-form-label">Last Name:</label>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 input-icons">
                                 <i class="fa fa-user icon"></i> 
                                 <input type="text" class="form-control input-field" name="l_name" id="l_name" placeholder="last name..."/>
                                 <div class="col-12">
@@ -134,7 +130,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="phone" class="col-sm-3 col-form-label">Phone:</label>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 input-icons">
                                 <i class="fa fa-phone icon"></i>
                                 <input type="tel" class="form-control input-field" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="contact number..."/>
                                 <small>Format: 123-4523-6783</small>
@@ -145,7 +141,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="email" class="col-sm-3 col-form-label">Email:</label>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 input-icons">
                                 <i class="fa fa-envelope icon"></i>
                                 <input type="email" name="email" id="email" class="form-control input-field" placeholder="email..."/>     
                                 <div class="col-12">
@@ -155,7 +151,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="date" class="col-sm-3 col-form-label">Date:</label>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 input-icons">
                                 <i class="fa fa-calendar icon"></i>
                                 <input type="date" class="form-control input-field" name="date" id="date"/>
                                 <div class="col-12">
@@ -165,7 +161,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="hour" class="col-sm-3 col-form-label">Hour:</label>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 input-icons">
                                 <input type="time" class="form-control input-field" name="hour" id="hour" min="13:00" max="22:00" step="3600"/>
                                 
                                 <div class="col-12">
@@ -175,7 +171,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="guests" class="col-sm-3 col-form-label">Number of Guests:</label>
-                            <div class="col-12 col-sm-7 col-md-8">
+                            <div class="col-12 col-sm-7 col-md-8 input-icons">
                             <i class="fa fa-users icon"></i>                 
                             <select id="guests" class="form-control input-field" name="guests">
                                 <option value="1">1 Person</option>

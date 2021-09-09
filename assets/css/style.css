@@ -1,5 +1,5 @@
 body{
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Monserrat', sans-serif;
 }
 
 /*  --- Navigation --- */
@@ -92,7 +92,7 @@ ul li a{
     outline: 3px solid red;
 }
 small{
-    margin-left: 6em;
+    margin: 0 auto;
 }
 
 .center-form{
