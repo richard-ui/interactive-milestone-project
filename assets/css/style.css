@@ -51,7 +51,7 @@ ul li a{
 /* --- Jumbotron --- */
 
 .jumbotron{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), #4267b2);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #854D27);
     height: 23em;
 }
 
@@ -127,7 +127,7 @@ select{
 /*  --- Footer --- */
 
 footer {
-    background-color: #4267b2;
+    background-color: #DD7230;
     color: #fafafa;
     min-height: 7.5em;
     margin: 0;
@@ -152,7 +152,7 @@ footer {
     line-height: 0.625em;
     text-align: center;
     color: #fafafa;
-    background: #4267b2;
+    background: #854D27;
     
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;

@@ -7,6 +7,7 @@ function Choice(elem) {
     var restName = ["Restaurant Name: "]; // basic array with 1 string
     var open_Times = ["Open from ", "pm to ", "pm"]; // array with 3 strings
     var hour = document.getElementById("hour");
+    $('#ModalForm').modal('show');
 
    if (elem.id == "chief") {
     
