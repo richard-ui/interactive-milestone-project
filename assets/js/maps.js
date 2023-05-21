@@ -104,7 +104,7 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
             label: labels[i % labels.length] // implement labels on markers
         });
 
-        google.maps.event.addListener(marker, 'mouseover', (function(marker, i) { // click event listener for infoWindow
+        google.maps.event.addListener(marker, 'click', (function(marker, i) { // click event listener for infoWindow
             return function() {
                 infowindow.setContent(locations[i][0]); // content from value '0' in array
                 infowindow.open(map, marker);
