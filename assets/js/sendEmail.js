@@ -22,7 +22,6 @@ function validateInput(input_name, validation_message){
       return false;
     }
     return true;
-
 }
 
 function sendMail(contactForm) {
@@ -41,22 +40,18 @@ function sendMail(contactForm) {
 			    if (validateInput('email', "Please Enter your Email!")){
 			        if (validateInput('date', "Please Enter a Date!")){
 			            if (validateInput('hour', "Please Enter a Time!")){
-			              emailjs.send("service_csslju6", "Rick", {          // grab values of contact form input fields and send to 'Ricks' Email
-								"reserve_name": contactForm.reserve_name.value, 
+                            emailjs.send("service_2ivb01t", "template_4qjz3bp", {
+								"from_name": contactForm.f_name.value, 
+								"email_from": contactForm.email.value,
+                                "reserve_name": contactForm.reserve_name.value, 
 								"first_name": contactForm.f_name.value,
 								"last_name": contactForm.l_name.value,
 								"phone": contactForm.phone.value,
-								"email": contactForm.email.value,
 								"date": contactForm.date.value,
 								"hour": contactForm.hour.value,
 								"guests": contactForm.guests.value,
 								"specialrequests": contactForm.special.value
-                            })
-                             emailjs.send("service_csslju6", "SendToUser", {          // grab values of contact form input fields and send to 'Ricks' Email
-								"first_name": contactForm.f_name.value, 
-								"email": contactForm.email.value
 							})
-							
 							.then(
 								function(response) {
 									console.log("SUCCESS", response);
