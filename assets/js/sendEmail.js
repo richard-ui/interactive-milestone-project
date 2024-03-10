@@ -22,7 +22,6 @@ function validateInput(input_name, validation_message){
       return false;
     }
     return true;
-
 }
 
 function sendMail(contactForm) {
@@ -46,7 +45,6 @@ function sendMail(contactForm) {
 								"first_name": contactForm.f_name.value,
 								"last_name": contactForm.l_name.value,
 								"phone": contactForm.phone.value,
-								"email": contactForm.email.value,
 								"date": contactForm.date.value,
 								"hour": contactForm.hour.value,
 								"guests": contactForm.guests.value,
