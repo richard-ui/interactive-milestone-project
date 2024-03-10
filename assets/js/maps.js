@@ -1,28 +1,29 @@
+
 var locations = [];
 var locations2 = [];
 var locations3 = [];
 var map;
-var markers = []; // array with pushed markers inside
+var markers = [];
 
 var marker, i;
 var lat1;
 var lng2;
 
-function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for centering map
+function initMap(lat1 = 53.465590, lng2 = -2.348213) {
 
-  map = new google.maps.Map(document.getElementById("map"), {   // center map
+  map = new google.maps.Map(document.getElementById("map"), {
             zoom: 11,
             center: {
-            lat: lat1,      // latitude and longitude parameters from initMap()
+            lat: lat1,
             lng: lng2
         }
     });
          
-    var labels =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ";   // array of labels for markers
+    var labels =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ";   // Array of labels for markers.
 
-  // multiple array of locations for cities
+  // Multiple array of locations for cities.
     
-    locations1 = [   // MANCHESTER
+    locations1 = [
 
         ['<h1 class="info_Heading">Big Chief</h1>' +
         '<div id="bodyContent">' +
@@ -50,7 +51,7 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
 
     ];
 
-    locations2 = [ // LIVERPOOL
+    locations2 = [
 
         ['<h1 class="info_Heading">Benson Lodge</h1>' +
         '<div id="bodyContent">' +
@@ -72,7 +73,7 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
    
     ];
 
-    locations3 = [ // BRADFORD
+    locations3 = [
 
         ['<h1 class="info_Heading">Cafe Chocolat</h1>' +
         '<div id="bodyContent">' +
@@ -104,9 +105,9 @@ function initMap(lat1 = 53.465590, lng2 = -2.348213) { // default variables for 
             label: labels[i % labels.length] // implement labels on markers
         });
 
-        google.maps.event.addListener(marker, 'mouseover', (function(marker, i) { // click event listener for infoWindow
+        google.maps.event.addListener(marker, 'click', (function(marker, i) { // click event listener for infoWindow
             return function() {
-                infowindow.setContent(locations[i][0]); // content from value '0' in array
+                infowindow.setContent(locations[i][0]);
                 infowindow.open(map, marker);
             };
         })(marker, i));
