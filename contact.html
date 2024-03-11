@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- English language -->
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- uses viewport to be responisve on mobile -->
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interactive Project</title>
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+
+	    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Use email js key to connect  to emailing -->
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        
+        <script>
+            (function(){
+                // emailjs.init("user_57t1ug1vZiBD8ezXEWhqF");
+                emailjs.init("ngsVulApiRIRBhkk0");
+            })();
+        </script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <header>
+
+     <!-- navigation-->
+     
+    <nav class="navbar navbar-expand-lg" style="background-color: #DD7230">
+
+        <a class="navbar-brand" href="index.html">Rick's Restaurant's</a>
+        
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link hvr-underline-from-center" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link hvr-underline-from-center" href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i><span>Contact Us</span></a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+     </header>
+
+   <!-- jumbotron-->
+
+        <section class="jumbotron">
+                <h2>Interactive Maps Project</h2>
+                <div class="row font-jumbotron">      
+                    <p class="col-12 offset-0 col-sm-5 offset-sm-4">
+                        View the map Page and take a look at Rick's great Restaurant destinations!, make sure to use the dropdown list to search by City. When doing so markers
+                        representing restaurants will
+                        appear on the map!
+                    </p>
+                </div> 
+        </section>
+
+    <!-- main -->
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title"> 
+                <h2>Get In Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="fe35874e-4d55-4f3c-aee4-bf6390d3ea56">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message..." class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form> 
+        <div class="contact-right">
+            <img src="assets/images/restaurant_image.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+            
+    <footer id="footermap" class="container-fluid">
+            <div class="row">
+                    <!-- social links -->
+                    
+                      <div class="offset-1 col-12 offset-sm-0 col-sm-12">
+
+                      <h5 class="uppercase general-sub">Social</h5>
+                        <ul class="list-inline social-links">
+                            
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.twitter.com/">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <span class="sr-only">LinkedIn</span>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            </footer>
+    
+     </div>
+
+     <!-- for clustering markers together -->
+   
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        
+        <!-- Script tags to retrive googlemaps api -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZXkyAZaR6az0ZkzS38AFKt4p7S02cWEE&callback=initMap"></script>
+       
+       <!-- Connect to our maps js file -->
+     <script src="assets/js/maps.js"></script>
+     <script src="assets/js/buttons.js"></script>
+
+    <!-- Connect to our send email js file -->
+
+    <script src="assets/js/sendEmail.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

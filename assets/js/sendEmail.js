@@ -25,7 +25,7 @@ function validateInput(input_name, validation_message){
 }
 
 function sendMail(contactForm) {
-    console.log(contactForm.reserve_name.value);
+    console.log(contactForm.email.value);
     // empty all form input fields to ""
 
     clearInputs();
