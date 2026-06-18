@@ -195,12 +195,46 @@ select{
     text-align-last:center;
     padding-right: 29px;
 }
-.info-btn{
-    margin-top: 1em;
+
+.info_Heading {
+    font-size: 28px;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
 }
-.infoContent{
+
+#bodyContent {
+    width: 440px;
+    min-height: 110px;
+    padding-bottom: 15px;
+}
+
+#bodyContent img {
+    float: left;
+    margin-right: 12px;
+}
+
+.infoContent {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 4px;
+}
+
+.info-btn {
     margin-top: 10px;
-    font-weight: 200;
+    display: inline-block;
+    width: auto;
+}
+
+.gm-style-iw {
+    padding-top: 8px !important;
+}
+
+.gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+.gm-style-iw-chr {
+    height: 20px;
 }
 
 /*  --- Footer --- */
@@ -254,16 +288,22 @@ footer {
 
 @media only screen and (max-width: 768px) {
  
-  body {
-    font-size: 1.125em;
-  }
-   .infoContent{
-    float: left;
-    clear: both;
-   }
-   small{
-    margin-left: 2em;
-}
+    body {
+        font-size: 1.125em;
+      }
+    
+      #bodyContent {
+        width: 260px;
+      }
+    
+      .info_Heading {
+        font-size: 24px;
+      }
+    
+      .infoContent {
+        float: left;
+        clear: both;
+      }
 }
 
   /* # Tablets/Ipads portrait mode */
